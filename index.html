@@ -54,6 +54,76 @@
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
 
+              <tr onmouseout="total_stop()" onmouseover="total_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='total_image'><video  width=100% height=100% muted autoplay loop>
+                    <source src="images/processed_totalselfscan.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video></div>
+                    <img src='images/totalselfscan_000001.jpg' width="160">
+                  </div>
+                  <script type="text/javascript">
+                    function total_start() {
+                      document.getElementById('total_image').style.opacity = "1";
+                    }
+    
+                    function total_stop() {
+                      document.getElementById('total_image').style.opacity = "0";
+                    }
+                    total_stop()
+                  </script>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="https://yudongguo.github.io/">
+                    <papertitle>TotalSelfScan: Learning Full-body Avatars from Self-Portrait Videos of Faces, Hands, and Bodies</papertitle>
+                  </a>
+                  <br>
+                  <a
+                  href="https://jtdong.com/">Junting Dong*</a>,
+            <a
+            href="https://raypine.github.io/">Qi Fang*</a>,
+                  <strong>Yudong Guo</strong>,
+                  <a
+                    href="https://pengsida.net/">Sida Peng</a>,
+                    <a
+                    href="https://chingswy.github.io/">Qing Shuai</a>,
+                    <a
+                    href="http://www.cad.zju.edu.cn/home/bao/">Hujun Bao</a>,
+                    <a
+                    href="https://xzhou.me/">Xiaowei Zhou</a>
+                  <br>
+                  <em>NeurIPS</em>, 2022
+                  <br>
+                  <a href="https://yudongguo.github.io/">project page</a> /
+    <!--	      <a href="https://zju3dv.github.io/mvpose/egpaper_supplementary.pdf">supplementary</a> /-->
+            <a href="https://yudongguo.github.io/">dataset</a> 
+                  <p></p>
+    <!--              <p>Extend the Mvpose with temporal tracking and filtering.</p>-->
+                </td>
+              </tr>
+
+
+              <tr>
+                <td style="vertical-align:middle">
+                  <img src='images/nerfblendshape.png' style="width:200px;">
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="https://arxiv.org/abs/2107.04277">
+                    <papertitle>Reconstructing Personalized Semantic Facial NeRF Models From Monocular Video</papertitle>
+                  </a>
+                  <br>
+                  Xuan Gao, Chenglai Zhong, Jun Xiang, <a href="http://hy1995.top/">Yang Hong</a>, <strong>Yudong Guo</strong>, <a href="http://staff.ustc.edu.cn/~juyong/">Juyong Zhang</a>
+                  <br>
+                  <em>SIGGRAPH Asia (Journal Track) </em>, 2022
+                  <br>
+                  <a href="https://ustc3dv.github.io/NeRFBlendShape/">project page</a> /
+                  <a href="https://arxiv.org/abs/2210.06108">paper</a> 
+                  <p></p>
+                </td>
+              </tr>
+
+
               <tr>
                 <td style="vertical-align:middle">
                   <img src='images/HeadIDR.png' style="width:200px;">
@@ -85,7 +155,7 @@
                   <br>
                   <strong>Yudong Guo</strong>, Keyu Chen, Sen Liang, <a
                     href="https://cg.cs.tsinghua.edu.cn/people/~Yongjin/Yongjin.htm">Yongjin Liu</a>, <a
-                    href="http://www.cad.zju.edu.cn/bao/">Hujun Bao</a>, <a
+                    href="http://www.cad.zju.edu.cn/home/bao/">Hujun Bao</a>, <a
                     href="http://staff.ustc.edu.cn/~juyong/">Juyong Zhang</a>
                   <br>
                   <em>IEEE International Conference on Computer Vision (ICCV) </em>, 2021
@@ -154,7 +224,7 @@
                   <a href="http://hy1995.top/">Yang Hong</a>, <a href="http://staff.ustc.edu.cn/~juyong/">Juyong
                     Zhang</a>, Boyi Jiang, <strong>Yudong
                     Guo</strong>, <a href="http://staff.ustc.edu.cn/~lgliu/">Ligang Liu</a>, <a
-                    href="http://www.cad.zju.edu.cn/bao/">Hujun Bao</a>
+                    href="http://www.cad.zju.edu.cn/home/bao/">Hujun Bao</a>
                   <br>
                   <em>IEEE Conference on Computer Vision and Pattern Recognition (CVPR) </em>, 2021
                   <br>
