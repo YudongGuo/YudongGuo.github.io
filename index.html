@@ -5,299 +5,408 @@
   <meta charset="UTF-8">
   <title>Yudong Guo</title>
   <meta name="author" content="Yudong Guo">
+  <meta name="description" content="Yudong Guo, assistant professor at USTC. Research in 3D vision and digital humans, with publications and project demos.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="stylesheet.css?v=2">
-  <link rel="icon" type="image/png" href="images/seal_icon.png">
+  <link rel="stylesheet" href="stylesheet.css?v=4">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
 </head>
 
 <body>
-  <div class="container">
+  <main class="container">
 
     <!-- Profile -->
     <section class="profile">
       <div class="profile-photo">
-        <img src="images/Yudong.jpg" alt="Yudong Guo">
+        <img src="images/Yudong.jpg" alt="Yudong Guo" width="1024" height="907" decoding="async">
       </div>
       <div class="profile-info">
         <h1>Yudong Guo</h1>
-        <p class="profile-bio">I am an assistant professor at <a href="http://en.ustc.edu.cn/">University of Science and Technology of China (USTC)</a>. I got my Ph.D. degree from USTC in 2021, supervised by <a href="http://staff.ustc.edu.cn/~juyong/">Prof. Juyong Zhang</a>. Before that, I received bachelor degree in Statistics in 2015 from USTC. From fall 2016 to spring 2017, I was a research assistant in the MultiMedia Lab at Nanyang Technological University under supervision of <a href="https://jianfei-cai.github.io/">Prof. Jianfei Cai</a> and <a href="https://personal.ntu.edu.sg/asjmzheng/">Prof. Jianmin Zheng</a>. My research interests include 3D vision and digital human.</p>
+        <p class="profile-intro">I am an assistant professor at the <a href="http://en.ustc.edu.cn/">University of Science and Technology of China (USTC)</a>. My research focuses on <strong>3D vision and digital humans</strong>.</p>
+        <p class="profile-bio">I received my Ph.D. from USTC in 2021, advised by <a href="http://staff.ustc.edu.cn/~juyong/">Prof. Juyong Zhang</a>, and my bachelor's degree in Statistics from USTC in 2015. From fall 2016 to spring 2017, I was a research assistant in the MultiMedia Lab at Nanyang Technological University, supervised by <a href="https://jianfei-cai.github.io/">Prof. Jianfei Cai</a> and <a href="https://personal.ntu.edu.sg/asjmzheng/">Prof. Jianmin Zheng</a>.</p>
         <div class="profile-links">
           <a href="mailto:yudong@ustc.edu.cn">Email</a>
           <a href="https://scholar.google.com/citations?user=cxF_-i4AAAAJ&hl=en">Google Scholar</a>
-          <a href="https://github.com/YudongGuo/">Github</a>
+          <a href="https://github.com/YudongGuo/">GitHub</a>
         </div>
       </div>
     </section>
 
     <!-- Publications -->
-    <h2 class="section-title">Publications</h2>
-    <section class="publications">
+    <div class="publications-heading">
+      <div class="publications-label">
+        <h2 class="section-title" id="publications">Publications</h2>
+        <p class="publication-note">&dagger; Corresponding author &middot; * Equal contribution</p>
+      </div>
+      <button class="preview-toggle" type="button" aria-pressed="false" hidden>Pause previews</button>
+    </div>
+    <section class="publications" aria-labelledby="publications">
+
+      <h3 class="publication-year" id="year-2026">2026</h3>
 
       <article class="paper">
         <div class="paper-img">
-          <img src="images/expportrait.gif" alt="ExpPortrait">
+          <a href="images/sdf-avatar.mp4" aria-label="Watch the SDF-Avatar demo" title="Click to view the demo">
+            <video muted loop playsinline preload="none" poster="images/sdf-avatar-poster.jpg" aria-label="SDF-Avatar demo" width="640" height="308">
+              <source src="images/sdf-avatar.mp4" type="video/mp4">
+              <img src="images/sdf-avatar-poster.jpg" alt="SDF-Avatar" width="640" height="308" decoding="async" loading="lazy">
+            </video>
+          </a>
         </div>
         <div class="paper-info">
-          <div class="paper-title"><a href="https://ustc3dv.github.io/ExpPortrait/">ExpPortrait: Expressive Portrait Generation via Personalized Representation</a></div>
+          <h4 class="paper-title"><a href="http://gcl.ustc.edu.cn/post/26-09-04/">SDF-Avatar: Animating Generative SDF Grids for One-Shot Avatar</a></h4>
+          <div class="paper-authors">Zhijun Wang, <strong>Yudong Guo</strong><sup>&dagger;</sup>, Xujing Chen, Junxi Zhang, <a href="http://staff.ustc.edu.cn/~juyong/">Juyong Zhang</a></div>
+          <div class="paper-venue">SIGGRAPH Asia <span class="venue-year">2026</span></div>
+          <div class="paper-links"><a href="http://gcl.ustc.edu.cn/post/26-09-04/">Research overview</a></div>
+          <div class="paper-desc">We animate generative SDF grids from a single image, preserving detailed head geometry and stable topology.</div>
+        </div>
+      </article>
+
+      <article class="paper">
+        <div class="paper-img">
+          <a href="images/splatctrla.mp4" aria-label="Watch the SplatCtrlA animation demo" title="Click to view the animation demo">
+            <video muted loop playsinline preload="none" poster="images/splatctrla-poster.jpg" aria-label="SplatCtrlA body motion, hand gesture, and facial expression animation" width="608" height="448">
+              <source src="images/splatctrla.mp4" type="video/mp4">
+              <img src="images/splatctrla-poster.jpg" alt="SplatCtrlA animation demo" width="608" height="448" decoding="async" loading="lazy">
+            </video>
+          </a>
+        </div>
+        <div class="paper-info">
+          <h4 class="paper-title"><a href="https://xiangjun-xj.github.io/SplatCtrlA/">SplatCtrlA: Generalizable Single Image to Fully Controllable 3D Avatar</a></h4>
+          <div class="paper-authors"><a href="https://xiangjun-xj.github.io/">Jun Xiang</a>, <strong>Yudong Guo</strong><sup>&dagger;</sup>, Boyang Guo, <a href="https://paulyuanmath.github.io/">Yancheng Yuan</a>, <a href="http://staff.ustc.edu.cn/~juyong/">Juyong Zhang</a></div>
+          <div class="paper-venue"><abbr title="European Conference on Computer Vision (ECCV)">ECCV</abbr> <span class="venue-year">2026</span></div>
+          <div class="paper-links"><a href="https://xiangjun-xj.github.io/SplatCtrlA/">Project</a> <a href="https://xiangjun-xj.github.io/project_page_assets/SplatCtrlA/SplatCtrlA.pdf">Paper</a> <a href="https://github.com/xiangjun-xj/SplatCtrlA-release">Code</a></div>
+          <div class="paper-desc">We create 3D avatars from a single image in seconds, with control over body pose, hand gestures, and facial expressions.</div>
+        </div>
+      </article>
+
+      <article class="paper">
+        <div class="paper-img">
+          <a href="images/semantic-hybrid.mp4" aria-label="Watch the semantic-aware hybrid scene reconstruction demo" title="Click to view the scene reconstruction demo">
+            <video muted loop playsinline preload="none" poster="images/semantic-hybrid-poster.jpg" aria-label="Aerial walkthrough of a reconstructed large-scale campus scene" width="640" height="478">
+              <source src="images/semantic-hybrid.mp4" type="video/mp4">
+              <img src="images/semantic-hybrid-poster.jpg" alt="Semantic-aware hybrid scene reconstruction" width="640" height="478" decoding="async" loading="lazy">
+            </video>
+          </a>
+        </div>
+        <div class="paper-info">
+          <h4 class="paper-title"><a href="https://ieeexplore.ieee.org/document/11513020">Efficient Large-Scale Scene Reconstruction via Semantic-Aware Hybrid Representation</a></h4>
+          <div class="paper-authors">Husen Li, Jingyu Lin, <strong>Yudong Guo</strong><sup>&dagger;</sup>, <a href="http://staff.ustc.edu.cn/~renjiec/">Renjie Chen</a></div>
+          <div class="paper-venue"><abbr title="IEEE Transactions on Visualization and Computer Graphics (TVCG)">TVCG</abbr> <span class="venue-year">2026</span></div>
+          <div class="paper-links"><a href="https://ieeexplore.ieee.org/document/11513020">Paper</a></div>
+          <div class="paper-desc">We combine textured meshes and 3D Gaussians through semantic guidance for compact large-scale scene reconstruction and efficient rendering.</div>
+        </div>
+      </article>
+
+      <article class="paper">
+        <div class="paper-img">
+          <a href="images/expportrait.mp4" aria-label="Watch the ExpPortrait demo" title="Click to view the demo">
+            <video muted loop playsinline preload="none" poster="images/expportrait-poster.jpg" aria-label="ExpPortrait demo" width="640" height="320">
+              <source src="images/expportrait.mp4" type="video/mp4">
+              <img src="images/expportrait-poster.jpg" alt="ExpPortrait" width="640" height="320" decoding="async" loading="lazy">
+            </video>
+          </a>
+        </div>
+        <div class="paper-info">
+          <h4 class="paper-title"><a href="https://ustc3dv.github.io/ExpPortrait/">ExpPortrait: Expressive Portrait Generation via Personalized Representation</a></h4>
           <div class="paper-authors"><a href="https://github.com/JunyiWang02/">Junyi Wang</a>, <strong>Yudong Guo</strong><sup>&dagger;</sup>, Boyang Guo, Shengming Yang, <a href="http://staff.ustc.edu.cn/~juyong/">Juyong Zhang</a></div>
-          <div class="paper-venue">IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2026</div>
-          <div class="paper-links"><a href="https://ustc3dv.github.io/ExpPortrait/">project page</a> <a href="https://arxiv.org/abs/2602.19900">paper</a></div>
+          <div class="paper-venue"><abbr title="IEEE Conference on Computer Vision and Pattern Recognition (CVPR)">CVPR</abbr> <span class="venue-year">2026</span></div>
+          <div class="paper-links"><a href="https://ustc3dv.github.io/ExpPortrait/">Project</a> <a href="https://arxiv.org/abs/2602.19900">Paper</a></div>
           <div class="paper-desc">We propose a personalized head representation that disentangles expression and identity for highly expressive portrait video synthesis.</div>
         </div>
       </article>
 
       <article class="paper">
         <div class="paper-img">
-          <img src="images/easy3e.gif" alt="Easy3E">
+          <a href="images/easy3e.mp4" aria-label="Watch the Easy3E demo" title="Click to view the demo">
+            <video muted loop playsinline preload="none" poster="images/easy3e-poster.jpg" aria-label="Easy3E demo" width="640" height="384">
+              <source src="images/easy3e.mp4" type="video/mp4">
+              <img src="images/easy3e-poster.jpg" alt="Easy3E" width="640" height="384" decoding="async" loading="lazy">
+            </video>
+          </a>
         </div>
         <div class="paper-info">
-          <div class="paper-title"><a href="https://ustc3dv.github.io/Easy3E/">Easy3E: Feed-Forward 3D Asset Editing via Rectified Voxel Flow</a></div>
+          <h4 class="paper-title"><a href="https://ustc3dv.github.io/Easy3E/">Easy3E: Feed-Forward 3D Asset Editing via Rectified Voxel Flow</a></h4>
           <div class="paper-authors">Shimin Hu, Yuanyi Wei, Fei Zha, <strong>Yudong Guo</strong><sup>&dagger;</sup>, <a href="http://staff.ustc.edu.cn/~juyong/">Juyong Zhang</a></div>
-          <div class="paper-venue">IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2026</div>
-          <div class="paper-links"><a href="https://ustc3dv.github.io/Easy3E/">project page</a> <a href="https://arxiv.org/abs/2602.21499">paper</a> <a href="https://github.com/linchanyi/Easy3E">code</a></div>
-          <div class="paper-desc">We propose a feed-forward 3D editing framework operating in sparse voxel space for fast, globally consistent, and high-fidelity 3D asset editing.</div>
+          <div class="paper-venue"><abbr title="IEEE Conference on Computer Vision and Pattern Recognition (CVPR)">CVPR</abbr> <span class="venue-year">2026</span></div>
+          <div class="paper-links"><a href="https://ustc3dv.github.io/Easy3E/">Project</a> <a href="https://arxiv.org/abs/2602.21499">Paper</a> <a href="https://github.com/linchanyi/Easy3E">Code</a></div>
+          <div class="paper-desc">We edit 3D assets in a single feed-forward pass using sparse voxel flow for fast, consistent results.</div>
         </div>
       </article>
 
       <article class="paper">
         <div class="paper-img">
-          <img src="images/gswap.gif" alt="GSwap">
+          <a href="images/gswap.mp4" aria-label="Watch the GSwap demo" title="Click to view the demo">
+            <video muted loop playsinline preload="none" poster="images/gswap-poster.jpg" aria-label="GSwap demo" width="640" height="360">
+              <source src="images/gswap.mp4" type="video/mp4">
+              <img src="images/gswap-poster.jpg" alt="GSwap" width="640" height="360" decoding="async" loading="lazy">
+            </video>
+          </a>
         </div>
         <div class="paper-info">
-          <div class="paper-title"><a href="https://ustc3dv.github.io/GSwap/">GSwap: Realistic Head Swapping with Dynamic Neural Gaussian Field</a></div>
+          <h4 class="paper-title"><a href="https://ustc3dv.github.io/GSwap/">GSwap: Realistic Head Swapping with Dynamic Neural Gaussian Field</a></h4>
           <div class="paper-authors">Jingtao Zhou, <a href="https://xuanghahahaha.github.io/">Xuan Gao</a>, Dongyu Liu, <a href="https://sites.google.com/site/junhuihoushomepage/">Junhui Hou</a>, <strong>Yudong Guo</strong><sup>&dagger;</sup>, <a href="http://staff.ustc.edu.cn/~juyong/">Juyong Zhang</a></div>
-          <div class="paper-venue">IEEE Transactions on Visualization and Computer Graphics (TVCG), 2026</div>
-          <div class="paper-links"><a href="https://ustc3dv.github.io/GSwap/">project page</a> <a href="https://arxiv.org/abs/2603.23168">paper</a></div>
-          <div class="paper-desc">We embed a 3D Gaussian feature field within SMPL-X surface for high-fidelity, 3D-consistent video head swapping with natural head-torso blending.</div>
+          <div class="paper-venue"><abbr title="IEEE Transactions on Visualization and Computer Graphics (TVCG)">TVCG</abbr> <span class="venue-year">2026</span></div>
+          <div class="paper-links"><a href="https://ustc3dv.github.io/GSwap/">Project</a> <a href="https://arxiv.org/abs/2603.23168">Paper</a></div>
+          <div class="paper-desc">We combine a dynamic Gaussian feature field with SMPL-X for consistent video head swapping and natural head-torso blending.</div>
         </div>
       </article>
 
+      <h3 class="publication-year" id="year-2025">2025</h3>
+
       <article class="paper">
         <div class="paper-img">
-          <img src="images/osot.gif" alt="OneShotOneTalk">
+          <a href="images/osot.mp4" aria-label="Watch the OneShotOneTalk demo" title="Click to view the demo">
+            <video muted loop playsinline preload="none" poster="images/osot-poster.jpg" aria-label="OneShotOneTalk demo" width="500" height="450">
+              <source src="images/osot.mp4" type="video/mp4">
+              <img src="images/osot-poster.jpg" alt="OneShotOneTalk" width="500" height="450" decoding="async" loading="lazy">
+            </video>
+          </a>
         </div>
         <div class="paper-info">
-          <div class="paper-title"><a href="https://ustc3dv.github.io/OneShotOneTalk/">Expressive Talking Human from Single-Image with Imperfect Priors</a></div>
+          <h4 class="paper-title"><a href="https://ustc3dv.github.io/OneShotOneTalk/">Expressive Talking Human from Single-Image with Imperfect Priors</a></h4>
           <div class="paper-authors"><a href="https://xiangjun-xj.github.io/">Jun Xiang</a>, <strong>Yudong Guo</strong><sup>&dagger;</sup>, Leipeng Hu, Boyang Guo, <a href="https://paulyuanmath.github.io/">Yancheng Yuan</a>, <a href="http://staff.ustc.edu.cn/~juyong/">Juyong Zhang</a></div>
-          <div class="paper-venue">IEEE International Conference on Computer Vision (ICCV), 2025</div>
-          <div class="paper-links"><a href="https://ustc3dv.github.io/OneShotOneTalk/">project page</a> <a href="https://arxiv.org/abs/2412.01106">paper</a> <a href="https://yudongguo.github.io/">code (comming soon)</a></div>
+          <div class="paper-venue"><abbr title="IEEE International Conference on Computer Vision (ICCV)">ICCV</abbr> <span class="venue-year">2025</span></div>
+          <div class="paper-links"><a href="https://ustc3dv.github.io/OneShotOneTalk/">Project</a> <a href="https://arxiv.org/abs/2412.01106">Paper</a> <span class="link-pending">Code coming soon</span></div>
           <div class="paper-desc">We adopt a 3DGS-Mesh coupled representation with pre-trained human video diffusion models for one-shot vivid talking avatars.</div>
         </div>
       </article>
 
       <article class="paper">
         <div class="paper-img">
-          <img src="images/pica.gif" alt="PICA">
+          <a href="images/pica.mp4" aria-label="Watch the PICA demo" title="Click to view the demo">
+            <video muted loop playsinline preload="none" poster="images/pica-poster.jpg" aria-label="PICA demo" width="512" height="248">
+              <source src="images/pica.mp4" type="video/mp4">
+              <img src="images/pica-poster.jpg" alt="PICA" width="512" height="248" decoding="async" loading="lazy">
+            </video>
+          </a>
         </div>
         <div class="paper-info">
-          <div class="paper-title"><a href="https://ustc3dv.github.io/PICA/">PICA: Physics-Integrated Clothed Avatar</a></div>
+          <h4 class="paper-title"><a href="https://ustc3dv.github.io/PICA/">PICA: Physics-Integrated Clothed Avatar</a></h4>
           <div class="paper-authors">Bo Peng, Yunfan Tao, Haoyu Zhan, <strong>Yudong Guo</strong>, <a href="http://staff.ustc.edu.cn/~juyong/">Juyong Zhang</a></div>
-          <div class="paper-venue">IEEE Transactions on Visualization and Computer Graphics (TVCG), 2025</div>
-          <div class="paper-links"><a href="https://ustc3dv.github.io/PICA/">project page</a> <a href="https://arxiv.org/abs/2407.05324">paper</a> <a href="https://yudongguo.github.io/">code (comming soon)</a></div>
+          <div class="paper-venue"><abbr title="IEEE Transactions on Visualization and Computer Graphics (TVCG)">TVCG</abbr> <span class="venue-year">2025</span></div>
+          <div class="paper-links"><a href="https://ustc3dv.github.io/PICA/">Project</a> <a href="https://arxiv.org/abs/2407.05324">Paper</a> <span class="link-pending">Code coming soon</span></div>
           <div class="paper-desc">We integrate a neural physics simulation engine with the 3DGS avatar for realistic clothed body animation.</div>
         </div>
       </article>
 
       <article class="paper">
         <div class="paper-img">
-          <img src="images/hera.png" alt="HERA">
+          <img src="images/hera.png" alt="HERA" width="2361" height="1004" decoding="async" loading="lazy">
         </div>
         <div class="paper-info">
-          <div class="paper-title"><a href="https://ustc3dv.github.io/hera/">HERA: Hybrid Explicit Representation for Ultra-Realistic Head Avatars</a></div>
+          <h4 class="paper-title"><a href="https://ustc3dv.github.io/hera/">HERA: Hybrid Explicit Representation for Ultra-Realistic Head Avatars</a></h4>
           <div class="paper-authors"><a href="https://rainbowrui.github.io/">Hongrui Cai</a>, <a href="https://scholar.google.com/citations?hl=zh-CN&user=AioOVwEAAAAJ">Yuting Xiao</a>, <a href="https://xuanwangvc.github.io/">Xuan Wang</a>, <a href="https://openreview.net/profile?id=~Jiafei_Li2">Jiafei Li</a>, <strong>Yudong Guo</strong>, <a href="https://sites.google.com/site/yanbofan0124/">Yanbo Fan</a>, <a href="https://scholar.google.com/citations?user=fe-1v0MAAAAJ&hl=en">Shenghua Gao</a>, <a href="http://staff.ustc.edu.cn/~juyong/">Juyong Zhang</a></div>
-          <div class="paper-venue">IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2025</div>
-          <div class="paper-links"><a href="https://ustc3dv.github.io/hera/">project page</a> <a href="https://arxiv.org/abs/2403.11453">paper</a></div>
+          <div class="paper-venue"><abbr title="IEEE Conference on Computer Vision and Pattern Recognition (CVPR)">CVPR</abbr> <span class="venue-year">2025</span></div>
+          <div class="paper-links"><a href="https://ustc3dv.github.io/hera/">Project</a> <a href="https://arxiv.org/abs/2403.11453">Paper</a></div>
         </div>
       </article>
 
       <article class="paper">
         <div class="paper-img">
-          <img src="images/EGAvatar.png" alt="EGAvatar">
+          <img src="images/EGAvatar.png" alt="EGAvatar" width="1159" height="586" decoding="async" loading="lazy">
         </div>
         <div class="paper-info">
-          <div class="paper-title"><a href="https://www.computer.org/csdl/journal/tg/5555/01/11021303/27dUtEJuleE">EGAvatar: Efficient GAN Inversion for Generalizable Head Avatar from Few-shot Images</a></div>
+          <h4 class="paper-title"><a href="https://www.computer.org/csdl/journal/tg/5555/01/11021303/27dUtEJuleE">EGAvatar: Efficient GAN Inversion for Generalizable Head Avatar from Few-shot Images</a></h4>
           <div class="paper-authors">Haopan Ren, Wei Duan, Wanyu Li, Yi Liu, <strong>Yudong Guo</strong>, <a href="https://shishenghuang.github.io/index/">Shi-Sheng Huang</a>, <a href="http://staff.ustc.edu.cn/~juyong/">Juyong Zhang</a>, <a href="https://vmcl.bnu.edu.cn/">Hua Huang</a></div>
-          <div class="paper-venue">IEEE Transactions on Visualization and Computer Graphics (TVCG), 2025</div>
-          <div class="paper-links"><a href="https://www.computer.org/csdl/journal/tg/5555/01/11021303/27dUtEJuleE">paper</a></div>
+          <div class="paper-venue"><abbr title="IEEE Transactions on Visualization and Computer Graphics (TVCG)">TVCG</abbr> <span class="venue-year">2025</span></div>
+          <div class="paper-links"><a href="https://www.computer.org/csdl/journal/tg/5555/01/11021303/27dUtEJuleE">Paper</a></div>
         </div>
       </article>
 
       <article class="paper">
         <div class="paper-img">
-          <img src="images/RGAvatar.png" alt="RGAvatar">
+          <img src="images/RGAvatar.png" alt="RGAvatar" width="1783" height="852" decoding="async" loading="lazy">
         </div>
         <div class="paper-info">
-          <div class="paper-title"><a href="https://ieeexplore.ieee.org/document/10907898">RGAvatar: Relightable 4D Gaussian Avatar from Monocular Videos</a></div>
+          <h4 class="paper-title"><a href="https://ieeexplore.ieee.org/document/10907898">RGAvatar: Relightable 4D Gaussian Avatar from Monocular Videos</a></h4>
           <div class="paper-authors">Zhe Fan, <a href="https://shishenghuang.github.io/index/">Shi-Sheng Huang</a>, Yichi Zhang, Dachao Shang, <a href="http://staff.ustc.edu.cn/~juyong/">Juyong Zhang</a>, <strong>Yudong Guo</strong>, <a href="https://vmcl.bnu.edu.cn/">Hua Huang</a></div>
-          <div class="paper-venue">IEEE Transactions on Visualization and Computer Graphics (TVCG), 2025</div>
-          <div class="paper-links"><a href="https://ieeexplore.ieee.org/document/10907898">paper</a></div>
+          <div class="paper-venue"><abbr title="IEEE Transactions on Visualization and Computer Graphics (TVCG)">TVCG</abbr> <span class="venue-year">2025</span></div>
+          <div class="paper-links"><a href="https://ieeexplore.ieee.org/document/10907898">Paper</a></div>
         </div>
       </article>
 
+      <h3 class="publication-year" id="year-2024">2024</h3>
+
       <article class="paper">
         <div class="paper-img">
-          <img src="images/PortraitGen.gif" alt="PortraitGen">
+          <a href="images/PortraitGen.mp4" aria-label="Watch the PortraitGen demo" title="Click to view the demo">
+            <video muted loop playsinline preload="none" poster="images/PortraitGen-poster.jpg" aria-label="PortraitGen demo" width="384" height="256">
+              <source src="images/PortraitGen.mp4" type="video/mp4">
+              <img src="images/PortraitGen-poster.jpg" alt="PortraitGen" width="384" height="256" decoding="async" loading="lazy">
+            </video>
+          </a>
         </div>
         <div class="paper-info">
-          <div class="paper-title"><a href="https://ustc3dv.github.io/PortraitGen/">Portrait Video Editing Empowered by Multimodal Generative Priors</a></div>
+          <h4 class="paper-title"><a href="https://ustc3dv.github.io/PortraitGen/">Portrait Video Editing Empowered by Multimodal Generative Priors</a></h4>
           <div class="paper-authors"><a href="https://xuanghahahaha.github.io/">Xuan Gao</a>, Haiyao Xiao, Chenglai Zhong, Shimin Hu, <strong>Yudong Guo</strong>, <a href="http://staff.ustc.edu.cn/~juyong/">Juyong Zhang</a></div>
-          <div class="paper-venue">SIGGRAPH Asia Conference Proceedings, 2024</div>
-          <div class="paper-links"><a href="https://ustc3dv.github.io/PortraitGen/">project page</a> <a href="https://arxiv.org/abs/2409.13591">paper</a> <a href="https://github.com/USTC3DV/PortraitGen-code">code</a></div>
+          <div class="paper-venue">SIGGRAPH Asia Conference Proceedings <span class="venue-year">2024</span></div>
+          <div class="paper-links"><a href="https://ustc3dv.github.io/PortraitGen/">Project</a> <a href="https://arxiv.org/abs/2409.13591">Paper</a> <a href="https://github.com/USTC3DV/PortraitGen-code">Code</a></div>
           <div class="paper-desc">We combine FlashAvatar with multimodal generative models to achieve consistent portrait video editing.</div>
         </div>
       </article>
 
       <article class="paper">
         <div class="paper-img">
-          <img src="images/flashavatar.png" alt="FlashAvatar">
+          <img src="images/flashavatar.png" alt="FlashAvatar" width="655" height="327" decoding="async" loading="lazy">
         </div>
         <div class="paper-info">
-          <div class="paper-title"><a href="https://ustc3dv.github.io/FlashAvatar/">FlashAvatar: High-fidelity Head Avatar with Efficient Gaussian Embedding</a></div>
+          <h4 class="paper-title"><a href="https://ustc3dv.github.io/FlashAvatar/">FlashAvatar: High-fidelity Head Avatar with Efficient Gaussian Embedding</a></h4>
           <div class="paper-authors">Jun Xiang, Xuan Gao, <strong>Yudong Guo</strong>, <a href="http://staff.ustc.edu.cn/~juyong/">Juyong Zhang</a></div>
-          <div class="paper-venue">IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2024</div>
-          <div class="paper-links"><a href="https://ustc3dv.github.io/FlashAvatar/">project page</a> <a href="https://arxiv.org/abs/2312.02214">paper</a> <a href="https://github.com/USTC3DV/FlashAvatar-code">code</a></div>
-          <div class="paper-desc">We attach 3DGS on mesh UV space to achieve 300FPS head avatar rendering.</div>
+          <div class="paper-venue"><abbr title="IEEE Conference on Computer Vision and Pattern Recognition (CVPR)">CVPR</abbr> <span class="venue-year">2024</span></div>
+          <div class="paper-links"><a href="https://ustc3dv.github.io/FlashAvatar/">Project</a> <a href="https://arxiv.org/abs/2312.02214">Paper</a> <a href="https://github.com/USTC3DV/FlashAvatar-code">Code</a></div>
+          <div class="paper-desc">We embed 3D Gaussians in mesh UV space for head avatar rendering at 300 FPS.</div>
         </div>
       </article>
 
+      <h3 class="publication-year" id="year-2022">2022</h3>
+
       <article class="paper">
         <div class="paper-img">
-          <div class="video-overlay">
-            <img src="images/totalselfscan.jpg" alt="TotalSelfScan">
-            <video muted autoplay loop><source src="images/totalselfscan.mp4" type="video/mp4"></video>
-          </div>
+          <a href="images/totalselfscan.mp4" aria-label="Watch the TotalSelfScan demo" title="Click to view the demo">
+            <video muted loop playsinline preload="none" poster="images/totalselfscan.jpg" aria-label="TotalSelfScan demo" width="600" height="400">
+              <source src="images/totalselfscan.mp4" type="video/mp4">
+              <img src="images/totalselfscan.jpg" alt="TotalSelfScan" width="600" height="400" decoding="async" loading="lazy">
+            </video>
+          </a>
         </div>
         <div class="paper-info">
-          <div class="paper-title"><a href="https://zju3dv.github.io/TotalSelfScan/">TotalSelfScan: Learning Full-body Avatars from Self-Portrait Videos of Faces, Hands, and Bodies</a></div>
+          <h4 class="paper-title"><a href="https://zju3dv.github.io/TotalSelfScan/">TotalSelfScan: Learning Full-body Avatars from Self-Portrait Videos of Faces, Hands, and Bodies</a></h4>
           <div class="paper-authors"><a href="https://jtdong.com/">Junting Dong*</a>, <a href="https://raypine.github.io/">Qi Fang*</a>, <strong>Yudong Guo</strong>, <a href="https://pengsida.net/">Sida Peng</a>, <a href="https://chingswy.github.io/">Qing Shuai</a>, <a href="http://www.cad.zju.edu.cn/home/bao/">Hujun Bao</a>, <a href="https://xzhou.me/">Xiaowei Zhou</a></div>
-          <div class="paper-venue">NeurIPS, 2022</div>
-          <div class="paper-links"><a href="https://zju3dv.github.io/TotalSelfScan/">project page</a> <a href="https://openreview.net/pdf?id=lgj33-O1Ely">paper</a> <a href="https://github.com/zju3dv/totalselfscan">code</a></div>
+          <div class="paper-venue">NeurIPS <span class="venue-year">2022</span></div>
+          <div class="paper-links"><a href="https://zju3dv.github.io/TotalSelfScan/">Project</a> <a href="https://openreview.net/pdf?id=lgj33-O1Ely">Paper</a> <a href="https://github.com/zju3dv/totalselfscan">Code</a></div>
         </div>
       </article>
 
       <article class="paper">
         <div class="paper-img">
-          <img src="images/nerfblendshape.png" alt="NeRFBlendShape">
+          <img src="images/nerfblendshape.png" alt="NeRFBlendShape" width="535" height="342" decoding="async" loading="lazy">
         </div>
         <div class="paper-info">
-          <div class="paper-title"><a href="https://ustc3dv.github.io/NeRFBlendShape/">Reconstructing Personalized Semantic Facial NeRF Models From Monocular Video</a></div>
+          <h4 class="paper-title"><a href="https://ustc3dv.github.io/NeRFBlendShape/">Reconstructing Personalized Semantic Facial NeRF Models From Monocular Video</a></h4>
           <div class="paper-authors">Xuan Gao, Chenglai Zhong, Jun Xiang, <a href="http://hy1995.top/">Yang Hong</a>, <strong>Yudong Guo</strong>, <a href="http://staff.ustc.edu.cn/~juyong/">Juyong Zhang</a></div>
-          <div class="paper-venue">SIGGRAPH Asia (Journal Track), 2022</div>
-          <div class="paper-links"><a href="https://ustc3dv.github.io/NeRFBlendShape/">project page</a> <a href="https://arxiv.org/abs/2210.06108">paper</a> <a href="https://github.com/USTC3DV/NeRFBlendShape-code">code</a></div>
+          <div class="paper-venue">SIGGRAPH Asia (Journal Track) <span class="venue-year">2022</span></div>
+          <div class="paper-links"><a href="https://ustc3dv.github.io/NeRFBlendShape/">Project</a> <a href="https://arxiv.org/abs/2210.06108">Paper</a> <a href="https://github.com/USTC3DV/NeRFBlendShape-code">Code</a></div>
         </div>
       </article>
 
+      <h3 class="publication-year" id="year-2021">2021</h3>
+
       <article class="paper">
         <div class="paper-img">
-          <img src="images/HeadIDR.png" alt="HeadIDR">
+          <img src="images/HeadIDR.png" alt="HeadIDR" width="535" height="280" decoding="async" loading="lazy">
         </div>
         <div class="paper-info">
-          <div class="paper-title"><a href="https://arxiv.org/abs/2107.04277">Prior-Guided Multi-View 3D Head Reconstruction</a></div>
+          <h4 class="paper-title"><a href="https://arxiv.org/abs/2107.04277">Prior-Guided Multi-View 3D Head Reconstruction</a></h4>
           <div class="paper-authors">Xueying Wang, <strong>Yudong Guo</strong>, Zhongqi Yang, <a href="http://staff.ustc.edu.cn/~juyong/">Juyong Zhang</a></div>
-          <div class="paper-venue">IEEE Transactions on Multimedia (TMM), 2021</div>
-          <div class="paper-links"><a href="https://arxiv.org/abs/2107.04277">paper</a></div>
+          <div class="paper-venue"><abbr title="IEEE Transactions on Multimedia (TMM)">TMM</abbr> <span class="venue-year">2021</span></div>
+          <div class="paper-links"><a href="https://arxiv.org/abs/2107.04277">Paper</a></div>
           <div class="paper-desc">We utilize prior-guided implicit neural rendering to reconstruct the 3D head model.</div>
         </div>
       </article>
 
       <article class="paper">
         <div class="paper-img">
-          <img src="images/AD-NeRF.png" alt="AD-NeRF">
+          <img src="images/AD-NeRF.png" alt="AD-NeRF" width="518" height="285" decoding="async" loading="lazy">
         </div>
         <div class="paper-info">
-          <div class="paper-title"><a href="https://yudongguo.github.io/ADNeRF/">AD-NeRF: Audio Driven Neural Radiance Fields for Talking Head Synthesis</a></div>
+          <h4 class="paper-title"><a href="https://yudongguo.github.io/ADNeRF/">AD-NeRF: Audio Driven Neural Radiance Fields for Talking Head Synthesis</a></h4>
           <div class="paper-authors"><strong>Yudong Guo</strong>, Keyu Chen, Sen Liang, <a href="https://cg.cs.tsinghua.edu.cn/people/~Yongjin/Yongjin.htm">Yongjin Liu</a>, <a href="http://www.cad.zju.edu.cn/home/bao/">Hujun Bao</a>, <a href="http://staff.ustc.edu.cn/~juyong/">Juyong Zhang</a></div>
-          <div class="paper-venue">IEEE International Conference on Computer Vision (ICCV), 2021</div>
-          <div class="paper-links"><a href="https://yudongguo.github.io/ADNeRF/">project page</a> <a href="https://arxiv.org/abs/2103.11078">paper</a> <a href="https://github.com/YudongGuo/AD-NeRF">code</a> <a href="https://www.youtube.com/watch?v=TQO2EBYXLyU">video</a></div>
+          <div class="paper-venue"><abbr title="IEEE International Conference on Computer Vision (ICCV)">ICCV</abbr> <span class="venue-year">2021</span></div>
+          <div class="paper-links"><a href="https://yudongguo.github.io/ADNeRF/">Project</a> <a href="https://arxiv.org/abs/2103.11078">Paper</a> <a href="https://github.com/YudongGuo/AD-NeRF">Code</a> <a href="https://www.youtube.com/watch?v=TQO2EBYXLyU">Video</a></div>
           <div class="paper-desc">We address the talking head problem with the aid of dynamic neural radiance fields.</div>
         </div>
       </article>
 
       <article class="paper">
         <div class="paper-img">
-          <img src="images/FaceFromX.png" alt="3D Face From X">
+          <img src="images/FaceFromX.png" alt="3D Face From X" width="409" height="282" decoding="async" loading="lazy">
         </div>
         <div class="paper-info">
-          <div class="paper-title"><a href="https://arxiv.org/abs/1808.05323">3D Face From X: Learning Face Shape from Diverse Sources</a></div>
+          <h4 class="paper-title"><a href="https://arxiv.org/abs/1808.05323">3D Face From X: Learning Face Shape from Diverse Sources</a></h4>
           <div class="paper-authors"><strong>Yudong Guo</strong>, Lin Cai, <a href="http://staff.ustc.edu.cn/~juyong/">Juyong Zhang</a></div>
-          <div class="paper-venue">IEEE Transactions on Image Processing (TIP), 2021</div>
-          <div class="paper-links"><a href="https://arxiv.org/abs/1808.05323">paper</a> <a href="data/FaceFromX.mp4">video</a></div>
-          <div class="paper-desc">We present a method to jointly learn a 3D face parametric model and 3D face reconstruction from diverse sources.</div>
+          <div class="paper-venue"><abbr title="IEEE Transactions on Image Processing (TIP)">TIP</abbr> <span class="venue-year">2021</span></div>
+          <div class="paper-links"><a href="https://arxiv.org/abs/1808.05323">Paper</a> <a href="data/FaceFromX.mp4">Video</a></div>
+          <div class="paper-desc">We jointly learn a parametric face model and 3D face reconstruction from diverse sources.</div>
         </div>
       </article>
 
       <article class="paper">
         <div class="paper-img">
-          <img src="images/FaceCorrection.png" alt="Face View Correction">
+          <img src="images/FaceCorrection.png" alt="Face View Correction" width="410" height="232" decoding="async" loading="lazy">
         </div>
         <div class="paper-info">
-          <div class="paper-title">Real-Time Face View Correction for Front-Facing Cameras</div>
+          <h4 class="paper-title">Real-Time Face View Correction for Front-Facing Cameras</h4>
           <div class="paper-authors"><strong>Yudong Guo</strong>, <a href="http://staff.ustc.edu.cn/~juyong/">Juyong Zhang</a>, Yihua Chen, <a href="https://github.com/RainbowRui">Hongrui Cai</a>, <a href="http://staff.ustc.edu.cn/~zhuang/">Zhangjin Huang</a>, <a href="http://www.bdeng.me/">Bailin Deng</a></div>
-          <div class="paper-venue">Computational Visual Media, 2021</div>
-          <div class="paper-links"><a href="data/FaceViewCorrection.pdf">paper</a> <a href="data/FaceViewCorrection.mp4">video</a></div>
-          <div class="paper-desc">Given the video stream from a single camera, we generate a stream that emulates the view from a virtual camera at a designated location.</div>
+          <div class="paper-venue">Computational Visual Media <span class="venue-year">2021</span></div>
+          <div class="paper-links"><a href="data/FaceViewCorrection.pdf">Paper</a> <a href="data/FaceViewCorrection.mp4">Video</a></div>
+          <div class="paper-desc">We correct face viewpoints in real time, synthesizing a virtual camera view from a single video stream.</div>
         </div>
       </article>
 
       <article class="paper">
         <div class="paper-img">
-          <img src="images/StereoPiFU.png" alt="StereoPIFu">
+          <img src="images/StereoPiFU.png" alt="StereoPIFu" width="352" height="232" decoding="async" loading="lazy">
         </div>
         <div class="paper-info">
-          <div class="paper-title">StereoPIFu: Depth Aware Clothed Human Digitization via Stereo Vision</div>
+          <h4 class="paper-title">StereoPIFu: Depth Aware Clothed Human Digitization via Stereo Vision</h4>
           <div class="paper-authors"><a href="http://hy1995.top/">Yang Hong</a>, <a href="http://staff.ustc.edu.cn/~juyong/">Juyong Zhang</a>, Boyi Jiang, <strong>Yudong Guo</strong>, <a href="http://staff.ustc.edu.cn/~lgliu/">Ligang Liu</a>, <a href="http://www.cad.zju.edu.cn/home/bao/">Hujun Bao</a></div>
-          <div class="paper-venue">IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2021</div>
-          <div class="paper-links"><a href="http://hy1995.top/StereoPIFuProject/">project page</a> <a href="https://arxiv.org/abs/2104.05289">paper</a> <a href="https://github.com/CrisHY1995/StereoPIFu_Code">code</a></div>
-          <div class="paper-desc">StereoPIFu integrates the geometric constraints of stereo vision with implicit representation to recover the 3D shape of the clothed human.</div>
+          <div class="paper-venue"><abbr title="IEEE Conference on Computer Vision and Pattern Recognition (CVPR)">CVPR</abbr> <span class="venue-year">2021</span></div>
+          <div class="paper-links"><a href="http://hy1995.top/StereoPIFuProject/">Project</a> <a href="https://arxiv.org/abs/2104.05289">Paper</a> <a href="https://github.com/CrisHY1995/StereoPIFu_Code">Code</a></div>
+          <div class="paper-desc">We combine stereo geometry with an implicit representation to reconstruct clothed humans in 3D.</div>
         </div>
       </article>
 
       <article class="paper">
         <div class="paper-img">
-          <img src="images/Caricature.png" alt="Caricature">
+          <img src="images/Caricature.png" alt="Caricature" width="307" height="229" decoding="async" loading="lazy">
         </div>
         <div class="paper-info">
-          <div class="paper-title"><a href="https://arxiv.org/abs/2004.09190">Landmark Detection and 3D Face Reconstruction for Caricature using a Nonlinear Parametric Model</a></div>
+          <h4 class="paper-title"><a href="https://arxiv.org/abs/2004.09190">Landmark Detection and 3D Face Reconstruction for Caricature using a Nonlinear Parametric Model</a></h4>
           <div class="paper-authors"><a href="https://github.com/RainbowRui">Hongrui Cai</a>, <strong>Yudong Guo</strong>, Zhuang Peng, <a href="http://staff.ustc.edu.cn/~juyong/">Juyong Zhang</a></div>
-          <div class="paper-venue">Graphical Models, 2021</div>
-          <div class="paper-links"><a href="https://arxiv.org/abs/2004.09190">paper</a> <a href="https://github.com/Juyong/CaricatureFace">code</a></div>
-          <div class="paper-desc">We propose the first automatic method for landmark detection and 3D face reconstruction for caricature by a 3D approach.</div>
+          <div class="paper-venue">Graphical Models <span class="venue-year">2021</span></div>
+          <div class="paper-links"><a href="https://arxiv.org/abs/2004.09190">Paper</a> <a href="https://github.com/Juyong/CaricatureFace">Code</a></div>
+          <div class="paper-desc">We automatically detect landmarks and reconstruct 3D caricature faces using a nonlinear parametric model.</div>
         </div>
       </article>
 
+      <h3 class="publication-year" id="year-2020">2020</h3>
+
       <article class="paper">
         <div class="paper-img">
-          <img src="images/FacePS.png" alt="FacePS">
+          <img src="images/FacePS.png" alt="FacePS" width="520" height="259" decoding="async" loading="lazy">
         </div>
         <div class="paper-info">
-          <div class="paper-title"><a href="https://arxiv.org/abs/2003.12307">Lightweight Photometric Stereo for Facial Details Recovery</a></div>
+          <h4 class="paper-title"><a href="https://arxiv.org/abs/2003.12307">Lightweight Photometric Stereo for Facial Details Recovery</a></h4>
           <div class="paper-authors">Xueying Wang, <strong>Yudong Guo</strong>, <a href="http://www.bdeng.me/">Bailin Deng</a>, <a href="http://staff.ustc.edu.cn/~juyong/">Juyong Zhang</a></div>
-          <div class="paper-venue">IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2020</div>
-          <div class="paper-links"><a href="https://arxiv.org/abs/2003.12307">paper</a> <a href="https://github.com/Juyong/FacePSNet">code</a></div>
+          <div class="paper-venue"><abbr title="IEEE Conference on Computer Vision and Pattern Recognition (CVPR)">CVPR</abbr> <span class="venue-year">2020</span></div>
+          <div class="paper-links"><a href="https://arxiv.org/abs/2003.12307">Paper</a> <a href="https://github.com/Juyong/FacePSNet">Code</a></div>
           <div class="paper-desc">We present a framework to recover high-fidelity face shapes from one-to-three images captured under near lights.</div>
         </div>
       </article>
 
+      <h3 class="publication-year" id="year-2018">2018</h3>
+
       <article class="paper">
         <div class="paper-img">
-          <img src="images/CNNFace.png" alt="CNN Face">
+          <img src="images/CNNFace.png" alt="CNN Face" width="745" height="522" decoding="async" loading="lazy">
         </div>
         <div class="paper-info">
-          <div class="paper-title"><a href="https://arxiv.org/abs/1708.00980">CNN-based Real-time Dense Face Reconstruction with Inverse-rendered Photo-realistic Face Images</a></div>
+          <h4 class="paper-title"><a href="https://arxiv.org/abs/1708.00980">CNN-based Real-time Dense Face Reconstruction with Inverse-rendered Photo-realistic Face Images</a></h4>
           <div class="paper-authors"><strong>Yudong Guo</strong>, <a href="http://staff.ustc.edu.cn/~juyong/">Juyong Zhang</a>, <a href="https://jianfei-cai.github.io/">Jianfei Cai</a>, Boyi Jiang, <a href="https://personal.ntu.edu.sg/asjmzheng/">Jianmin Zheng</a></div>
-          <div class="paper-venue">IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2018</div>
-          <div class="paper-links"><a href="https://arxiv.org/abs/1708.00980">paper</a> <a href="data/3DFace.mp4">video</a> <a href="https://github.com/Juyong/3DFace">dataset</a></div>
-          <div class="paper-desc">We present a novel face data generation method to train the 3DFaceNet for real-time dense face reconstruction from a monocular RGB video.</div>
+          <div class="paper-venue"><abbr title="IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)">TPAMI</abbr> <span class="venue-year">2018</span></div>
+          <div class="paper-links"><a href="https://arxiv.org/abs/1708.00980">Paper</a> <a href="data/3DFace.mp4">Video</a> <a href="https://github.com/Juyong/3DFace">Dataset</a></div>
+          <div class="paper-desc">We train 3DFaceNet with generated face images for real-time dense reconstruction from monocular RGB video.</div>
         </div>
       </article>
 
     </section>
 
     <footer>
-      Wonderful template from <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron</a>.
+      Template adapted from <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron</a>.
     </footer>
 
-  </div>
+  </main>
+  <script src="previews.js" defer></script>
 </body>
 
 </html>
