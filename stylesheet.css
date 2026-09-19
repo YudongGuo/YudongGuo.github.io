@@ -87,7 +87,8 @@ sup { font-size: .7em; line-height: 0; }
 }
 .profile-info h1 { font-size: 2.25rem; line-height: 1.2; letter-spacing: -.025em; color: var(--ink); margin-bottom: 18px; }
 .profile-intro { font-size: 1.0625rem; line-height: 1.65; margin-bottom: 14px; }
-.profile-bio { text-align: left; margin-bottom: 20px; }
+.profile-intro, .profile-bio { text-align: justify; }
+.profile-bio { margin-bottom: 20px; }
 .profile-links { display: flex; flex-wrap: wrap; gap: 8px; }
 .profile-links a {
   display: inline-flex;
@@ -102,22 +103,10 @@ sup { font-size: .7em; line-height: 0; }
 .profile-links a:hover { background: var(--surface); border-color: #9bb9d7; }
 
 /* Publication hierarchy */
-.publications-heading { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 8px 16px; padding-top: 26px; }
+.publications-heading { padding-top: 26px; }
 .publications-label { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 16px; }
 .section-title { font-size: 1.5rem; line-height: 1.3; color: var(--ink); }
 .publication-note { color: var(--muted); font-size: .8125rem; line-height: 1.5; }
-.preview-toggle {
-  flex-shrink: 0;
-  color: var(--muted);
-  background: transparent;
-  border: 1px solid #d9e2ed;
-  border-radius: 5px;
-  padding: 6px 10px;
-  min-height: 36px;
-  cursor: pointer;
-  font-size: .875rem;
-}
-.preview-toggle:hover { color: var(--blue-hover); border-color: #9bb9d7; background: var(--surface); }
 .publication-year {
   display: flex;
   align-items: center;
@@ -175,12 +164,11 @@ footer { text-align: center; color: var(--muted); font-size: .8125rem; margin-to
   .profile-photo { justify-self: center; }
   .profile-photo img { width: 120px; height: 120px; }
   .profile-info h1 { text-align: center; font-size: 2rem; margin-bottom: 18px; }
+  .profile-intro, .profile-bio { text-align: left; }
   .profile-links { justify-content: center; }
   .profile-links a { min-height: 40px; }
-  .publications-heading { gap: 5px 8px; padding-top: 24px; }
-  .publications-label { display: contents; }
-  .publication-note { grid-column: 1 / -1; grid-row: 2; }
-  .preview-toggle { grid-column: 2; grid-row: 1; min-height: 36px; padding: 5px 8px; font-size: .8125rem; }
+  .publications-heading { padding-top: 24px; }
+  .publications-label { gap: 5px 16px; }
   .publication-year { margin-top: 26px; }
   .paper { grid-template-columns: 1fr; gap: 18px; padding: 24px 0; }
   .paper-img { width: min(100%, 280px); justify-self: center; }
