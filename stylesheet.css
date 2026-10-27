@@ -85,7 +85,17 @@ sup { font-size: .7em; line-height: 0; }
   border-radius: 50%;
   box-shadow: 0 3px 12px rgba(25, 45, 70, .08);
 }
-.profile-info h1 { font-size: 2.25rem; line-height: 1.2; letter-spacing: -.025em; color: var(--ink); margin-bottom: 18px; }
+.profile-info h1 { font-size: 2.25rem; line-height: 1.2; letter-spacing: -.025em; color: var(--ink); margin-bottom: 8px; }
+.profile-role { margin-bottom: 16px; }
+.profile-role span {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: #f1f3f5;
+  color: var(--muted);
+  font-size: .8125rem;
+  line-height: 1.5;
+}
 .profile-intro { font-size: 1.0625rem; line-height: 1.65; margin-bottom: 14px; }
 .profile-intro, .profile-bio { text-align: justify; }
 .profile-bio { margin-bottom: 20px; }
@@ -163,7 +173,8 @@ footer { text-align: center; color: var(--muted); font-size: .8125rem; margin-to
   .profile { grid-template-columns: 1fr; gap: 20px; padding: 0 0 28px; }
   .profile-photo { justify-self: center; }
   .profile-photo img { width: 120px; height: 120px; }
-  .profile-info h1 { text-align: center; font-size: 2rem; margin-bottom: 18px; }
+  .profile-info h1 { text-align: center; font-size: 2rem; }
+  .profile-role { text-align: center; }
   .profile-intro, .profile-bio { text-align: left; }
   .profile-links { justify-content: center; }
   .profile-links a { min-height: 40px; }
